@@ -1,0 +1,5 @@
+com\example\security1\Security1Application.class
+com\example\security1\config\SecurityConfig.class
+com\example\security1\model\User.class
+com\example\security1\controller\IndexController.class
+com\example\security1\config\WebMMvcConfig.class

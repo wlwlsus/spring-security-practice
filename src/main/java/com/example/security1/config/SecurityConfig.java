@@ -1,9 +1,11 @@
 package com.example.security1.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
  * author : cadqe13@gmail.com
@@ -13,6 +15,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity //Spring Security Filter 가 Spring Filter Chain 에 등록된다.
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+	@Bean
+	public BCryptPasswordEncoder encodePwd() {
+		return new BCryptPasswordEncoder();
+	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -24,6 +31,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 						.anyRequest().permitAll()
 						.and()
 						.formLogin()
-						.loginPage("/login");
+						.loginPage("/loginForm");
 	}
 }
+
+
