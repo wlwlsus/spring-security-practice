@@ -1,5 +1,8 @@
+com\example\security1\repository\UserRepository.class
+com\example\security1\config\WebMvcConfig.class
 com\example\security1\Security1Application.class
 com\example\security1\config\SecurityConfig.class
 com\example\security1\model\User.class
+com\example\security1\config\auth\PrincipalDetails.class
 com\example\security1\controller\IndexController.class
-com\example\security1\config\WebMMvcConfig.class
+com\example\security1\config\auth\PrincipalDetailsService.class

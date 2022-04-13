@@ -20,7 +20,7 @@ import lombok.Data;
 @Data
 public class PrincipalDetails implements UserDetails{
 
-	private User user;
+	private final User user;
 
 	public PrincipalDetails(User user) {
 		super();
@@ -60,7 +60,7 @@ public class PrincipalDetails implements UserDetails{
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		Collection<GrantedAuthority> collect = new ArrayList<>();
-		collect.add(()-> user.getRole());
+		collect.add(user::getRole);
 		return collect;
 	}
 

@@ -1,5 +1,8 @@
-D:\Project\security1\src\main\java\com\example\security1\controller\IndexController.java
-D:\Project\security1\src\main\java\com\example\security1\Security1Application.java
-D:\Project\security1\src\main\java\com\example\security1\config\SecurityConfig.java
-D:\Project\security1\src\main\java\com\example\security1\config\WebMMvcConfig.java
-D:\Project\security1\src\main\java\com\example\security1\model\User.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\repository\UserRepository.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\config\auth\PrincipalDetails.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\config\SecurityConfig.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\model\User.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\config\auth\PrincipalDetailsService.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\Security1Application.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\controller\IndexController.java
+D:\Project\spring-security-practice\src\main\java\com\example\security1\config\WebMvcConfig.java
