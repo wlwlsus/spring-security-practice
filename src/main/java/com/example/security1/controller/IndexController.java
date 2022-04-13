@@ -65,7 +65,7 @@ public class IndexController {
 	@GetMapping("/user")
 	@ResponseBody
 	public String user(@AuthenticationPrincipal PrincipalDetails principalDetails) {
-		System.out.println("principledatails: " + principalDetails.getUser());
+		System.out.println("컨트롤러 => principledatails: " + principalDetails.getUser());
 		return "user";
 	}
 
